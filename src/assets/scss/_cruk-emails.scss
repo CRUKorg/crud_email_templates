@@ -1,0 +1,198 @@
+// General styles
+h1,
+h2,
+h3 {
+  margin-top: .5em;
+
+  text-transform: uppercase;
+
+  color: $primary-color;
+
+  font-weight: $header-font-weight;
+}
+
+.button {
+  &.secondary {
+    a {
+      color: $secondary-color !important;
+      border: 2px solid $secondary-color !important;
+      outline: 2px solid $white !important;
+      background-color: $white !important;
+    }
+  }
+  .button-facebook {
+    a {
+      padding-left: 50px !important;
+
+      color: $white !important;
+      border: 2px solid #36609f !important;
+      outline: 2px solid $white !important;
+      background: url("/assets/img/facebook-icon.png") 0 -2px no-repeat !important;
+      background-color: #36609f !important;
+    }
+  }
+}
+
+center {
+  min-width: 100% !important;
+}
+
+.panel {
+  padding: 16px !important;
+
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+// Top message
+.top-message {
+  padding: 6px 0 !important;
+
+  color: $black;
+  background-color: $light-gray;
+}
+
+// Main messsage
+.message {
+  .message-body {
+    padding: 20px;
+
+    background-color: $primary-color;
+
+    h1,
+    h2,
+    h3,
+    p {
+      color: $white;
+    }
+  }
+
+  .message-link {
+    padding: 10px 10px 30px;
+
+    background: url("/assets/img/curve.png") 50% 0 no-repeat;
+  }
+}
+
+// Events
+.events {
+  h2 {
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  .event {
+    margin-top: -5px;
+    padding-top: 10px;
+
+    border-top: 1px solid #ddd ;
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+  .event-calendar {
+    padding: 15px 0;
+
+    background: url("/assets/img/calendar-icon.png") 50% 0 no-repeat;
+  }
+
+  .event-day {
+    display: block;
+
+    text-align: center;
+
+    color: $white;
+
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .event-month {
+    display: block;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $white;
+
+    font-size: small;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .event-info {
+    padding: 10px 10% 0 10px;
+
+    background: url("/assets/img/chevron.png") 95% 50% no-repeat;
+  }
+
+  .event-name {
+    display: block;
+
+    text-transform: uppercase;
+
+    color: $primary-color;
+
+    font-weight: 700;
+  }
+
+  .event-date {
+    display: block;
+
+    text-transform: uppercase;
+
+    font-weight: 700;
+  }
+}
+
+// Donate
+.donate {
+  padding: 20px 20px 0;
+
+  background-color: $primary-color;
+
+  p {
+    text-transform: uppercase;
+
+    color: $white;
+
+    font-weight: 700;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+// Stories
+.story {
+  margin: 0;
+}
+
+// Fundraise
+
+// Shop
+.shop-item {
+  margin: 0;
+}
+
+// Social media icons
+.social {
+  padding: 10px 0;
+
+  background-color: #ddd;
+}
+
+// Footer
+.partner,
+.sponsors,
+.supporters,
+.footer {
+  margin-top: -16px;
+  padding: 20px;
+
+  border-bottom: 2px solid $white;
+  background-color: $light-gray;
+}
