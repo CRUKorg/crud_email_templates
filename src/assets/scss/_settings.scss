@@ -28,9 +28,11 @@ $cruk-black:      #333;
 
 $primary-color:   $cruk-darkblue;
 $secondary-color: $cruk-magenta;
+$facebook-blue: #36609f;
 
 $white: $cruk-white;
 $light-gray: lighten($cruk-grey, 30%);
+$lightish-gray: #ddd;
 $medium-gray: $cruk-grey;
 $dark-gray: darken($cruk-grey, 25%);
 $black: $cruk-black;
@@ -42,7 +44,7 @@ $pre-color: #ff6908;
 
 $global-width: 580px;
 $global-width-small: 100%;
-$global-gutter: 16px;
+$global-gutter: 20px;
 
 $body-background: $white;
 $container-background: $white;
