@@ -1,4 +1,11 @@
 // General styles
+
+* {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
 h1,
 h2,
 h3 {
