@@ -88,8 +88,8 @@ $h4-font-size: 16px;
 $h5-font-size: 14px;
 $h6-font-size: 12px;
 
-$header-margin-bottom: 8px;
-$paragraph-margin-bottom: 8px;
+$header-margin-bottom: 0.5em;
+$paragraph-margin-bottom: 0.5em;
 
 $small-font-size: 80%;
 $small-font-color: $black;
@@ -97,13 +97,13 @@ $small-font-color: $black;
 $lead-font-size: $global-font-size * 1.25;
 $lead-line-height: 1.5;
 
-$text-padding: 8px;
+$text-padding: 0.5em;
 
 $subheader-lineheight: 1.4;
 $subheader-color: $dark-gray;
 $subheader-font-weight: $global-font-weight;
-$subheader-margin-top: 4px;
-$subheader-margin-bottom: 8px;
+$subheader-margin-top: 0.25em;
+$subheader-margin-bottom: 0.5em;
 
 $hr-width: $global-width;
 $hr-border: 1px solid $black;
@@ -120,10 +120,10 @@ $stat-font-size: 40px;
 // ---------
 
 $button-padding: (
-  tiny: 4px 8px 4px 8px,
-  small: 5px 10px 5px 10px,
-  default: 8px 16px 8px 16px,
-  large: 10px 20px 10px 20px,
+  tiny: 4px 16px 4px 16px,
+  small: 5px 20px 5px 20px,
+  default: 8px 32px 8px 32px,
+  large: 10px 40px 10px 40px,
 );
 $button-font-size: (
   tiny: 10px,
@@ -134,7 +134,7 @@ $button-font-size: (
 $button-color: $white;
 $button-color-alt: $medium-gray;
 $button-font-weight: bold;
-$button-margin: 0;
+$button-margin: 20px 0 0;
 $button-background: $secondary-color;
 $button-border: 2px solid $button-background;
 $button-radius: $global-radius;

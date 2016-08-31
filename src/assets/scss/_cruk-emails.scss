@@ -1,5 +1,5 @@
 // General styles
-
+// ------------------------------------
 * {
   -webkit-hyphens: none;
   -ms-hyphens: none;
@@ -16,6 +16,7 @@ h3 {
 }
 
 .button {
+
   &.secondary {
     a {
       color: $secondary-color !important;
@@ -25,7 +26,7 @@ h3 {
     }
   }
 
-  .button-facebook {
+  &.button-facebook {
     a {
       padding-left: 50px !important;
       color: $white !important;
@@ -43,19 +44,26 @@ center {
 
 .panel {
   margin: 0 $global-gutter $global-gutter;
-  padding: $global-gutter 0;
+  padding: $global-gutter 0 0;
   border: 1px solid $lightish-gray;
   border-radius: 3px;
+  position: relative;
 }
 
-// Top message
+// Top message block
+// ------------------------------------
 .top-message {
   padding: 6px 0;
-  color: $black;
+  color: $cruk-grey;
   background-color: $light-gray;
+  font-size: 12px;
 }
 
-// Main messsage
+// Masthead block
+// ------------------------------------
+
+// Main messsage block
+// ------------------------------------
 .message {
   .message-body {
     padding: 20px;
@@ -70,16 +78,18 @@ center {
   }
 
   .message-link {
-    padding: 10px 10px 30px;
-    background: url('/assets/img/curve.png') 50% 0 no-repeat;
+    padding: 0 10px 20px;
+    background: url('/assets/img/curve.png') 50% 100% no-repeat;
   }
 }
 
-// Events
+// Events block
+// ------------------------------------
 .events {
   h2 {
-    margin-top: 0;
-    margin-bottom: 14px;
+    margin: 0 !important;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $lightish-gray;
   }
 
   .button {
@@ -126,14 +136,17 @@ center {
     font-weight: 700;
   }
 
-  .event-date {
+  .event-date,
+  .event-time {
+    color: $dark-gray;
     display: block;
     text-transform: uppercase;
     font-weight: 700;
   }
 }
 
-// Donate
+// Donate block
+// ------------------------------------
 .donate {
   padding: 20px 20px 0;
   background-color: $primary-color;
@@ -149,25 +162,37 @@ center {
   }
 }
 
-// Stories
+// Story block
+// ------------------------------------
 .story {
   margin: 0;
 }
 
-// Fundraise
+.stories {
+  h2,
+  p {
+    text-align: left;
+  }
+}
 
-// Shop
+// Fundraise
+// ------------------------------------
+
+// Shop block
+// ------------------------------------
 .shop-item {
   margin: 0;
 }
 
-// Social media icons
+// Social media icons block
+// ------------------------------------
 .social {
   padding: 10px 0;
   background-color: $lightish-gray;
 }
 
-// Footer
+// Footer blocks
+// ------------------------------------
 .partner,
 .sponsors,
 .supporters,
