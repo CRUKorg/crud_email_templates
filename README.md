@@ -1,4 +1,20 @@
-# Foundation for Emails Template
+# CRUK Email Templates
+
+The HTML templates for the CRUK CCMP emails uses the ZURB Foundation for Emails framework. The sources files are written using the framework's Handlebars template engine and custom markup. The build process aggregates the source files into a single HTML file, translating the custom markup into a table-based layout compatible with most modern email clients. The SASS files are also compiled and translated into inline CSS, leaving just the styles using media queries as a `<style>` block.
+
+## Installing and compiling
+
+1/ Install the Foundation for Emails framework: `npm install foundation-cli --global`
+2/ Clone the repository: `git clone git@github.com:CRUKorg/cruk_email_templates.git`
+3/ Source files are in `cruk_email_templates/src`
+4/ Compile source code: `foundation build` - this will also open a browser showing the result with LiveReload. The browser will auto-update whenever the code is recomplied.
+5/ The template file for copying into CCMP is at `cruk_email_templates/dist/index.html`.
+
+Details of managing the CCMP templates within their web-based admin interface is not documented here.
+
+Details of the Foundation for Emails framework follows, or visit `http://foundation.zurb.com/emails/email-templates.html`.
+
+## Foundation for Emails Template
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-emails-template/dev-status.svg)](https://david-dm.org/zurb/foundation-emails-template#info=devDependencies)
 
@@ -13,11 +29,11 @@ This is the official starter project for [Foundation for Emails](http://foundati
 - Built-in BrowserSync server
 - Full email inlining process
 
-## Installation
+### Installation
 
 To use this template, your computer needs [Node.js](https://nodejs.org/en/) 0.12 or greater. The template can be installed with the Foundation CLI, or downloaded and set up manually.
 
-### Using the CLI
+#### Using the CLI
 
 Install the Foundation CLI with this command:
 
@@ -33,7 +49,7 @@ foundation new --framework emails
 
 The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
 
-### Manual Setup
+#### Manual Setup
 
 To manually set up the template, first download it with Git:
 
@@ -48,7 +64,7 @@ cd projectname
 npm install
 ```
 
-## Build Commands
+### Build Commands
 
 Run `npm start` to kick off the build process. A new browser tab will open with a server pointing to your project files.
 
@@ -58,7 +74,7 @@ Run `npm run litmus` to build as above, then submit to litmus for testing. *AWS 
 
 Run `npm run zip` to build as above, then zip HTML and images for easy deployment to email marketing services. 
 
-## Litmus Tests (config.json)
+### Litmus Tests (config.json)
 
 Testing in Litmus requires the images to be hosted publicly. The provided gulp task handles this by automating hosting to an AWS S3 account. Provide your Litmus and AWS S3 account details in the `example.config.json` and then rename to `config.json`. Litmus config, and `aws.url` are required, however if you follow the [aws-sdk suggestions](http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/node-configuring.html) you don't need to supply the AWS credentials into this JSON.
 
