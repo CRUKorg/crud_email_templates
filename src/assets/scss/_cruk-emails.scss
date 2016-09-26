@@ -32,7 +32,7 @@ h3 {
       color: $white !important;
       border: 2px solid $facebook-blue !important;
       outline: 2px solid $white !important;
-      background: url('/assets/img/facebook-icon.png') 0 -2px no-repeat !important;
+      background: url('http://wpm.ccmp.eu/wpm/459/ContentUploads/facebook-icon.png') 0 -2px no-repeat !important;
       background-color: $facebook-blue !important;
     }
   }
@@ -45,9 +45,15 @@ center {
 .panel {
   margin: 0 $global-gutter $global-gutter;
   padding: $global-gutter 0 0;
-  border: 1px solid $lightish-gray;
+  border: 2px solid $lightish-gray;
   border-radius: 3px;
-  position: relative;
+}
+
+.panel-blue {
+  margin: 0 0 $global-gutter;
+  padding: $global-gutter 0 0;
+  background-color: $primary-color;
+  color: $white;
 }
 
 // Top message block
@@ -78,8 +84,9 @@ center {
   }
 
   .message-link {
-    padding: 0 10px 20px;
-    background: url('/assets/img/curve.png') 50% 100% no-repeat;
+    margin-top: -15px;
+    padding: 5px 10px 20px;
+    background: url('http://wpm.ccmp.eu/wpm/459/ContentUploads/curve.png') 50% 100% no-repeat;
   }
 }
 
@@ -102,7 +109,7 @@ center {
 
   .event-calendar {
     padding: 25px 0 15px;
-    background: url('/assets/img/calendar-icon.png') 50% 10px no-repeat;
+    background: url('http://wpm.ccmp.eu/wpm/459/ContentUploads/calendar-icon.png') 50% 10px no-repeat;
   }
 
   .event-day {
@@ -126,7 +133,7 @@ center {
 
   .event-info {
     padding: 10px 10% 0 10px;
-    background: url('/assets/img/chevron.png') 95% 50% no-repeat;
+    background: url('http://wpm.ccmp.eu/wpm/459/ContentUploads/chevron.png') 95% 50% no-repeat;
   }
 
   .event-name {
@@ -148,17 +155,24 @@ center {
 // Donate block
 // ------------------------------------
 .donate {
-  padding: 20px 20px 0;
-  background-color: $primary-color;
-
   p {
     text-transform: uppercase;
     color: $white;
     font-weight: 700;
+    font-size: 16px;
+    margin: 0 !important;
 
     span {
       display: block;
+
+      @media screen and (max-width: $global-breakpoint) {
+        text-align: center;
+      }
     }
+  }
+
+  .button {
+    margin-top: 0;
   }
 }
 
