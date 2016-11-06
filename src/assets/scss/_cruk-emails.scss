@@ -56,13 +56,15 @@ center {
   color: $white;
 }
 
-// Top message block
+// Preheader block
 // ------------------------------------
-.top-message {
-  padding: 6px 0;
+.preheader {
   color: $cruk-grey;
   background-color: $light-gray;
   font-size: 12px;
+  .wrapper-inner {
+    padding: 6px 0;
+  }
 }
 
 // Masthead block
