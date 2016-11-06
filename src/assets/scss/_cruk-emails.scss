@@ -72,23 +72,23 @@ center {
 
 // Main messsage block
 // ------------------------------------
-.message {
-  .message-body {
-    padding: 20px;
-    background-color: $primary-color;
-
-    h1,
-    h2,
-    h3,
-    p {
-      color: $white;
-    }
+.hero-body {
+  background-color: $primary-color;
+  .wrapper-inner {
+    padding: 20px 20px 0;
   }
+  h1,
+  h2,
+  h3,
+  p {
+    color: $white;
+  }
+}
 
-  .message-link {
-    margin-top: -15px;
-    padding: 5px 10px 20px;
-    background: url('http://wpm.ccmp.eu/wpm/459/ContentUploads/curve.png') 50% 100% no-repeat;
+.hero-link {
+  background: url('http://wpm.ccmp.eu/wpm/459/ContentUploads/curve.png') 50% 100% no-repeat;
+  .wrapper-inner {
+    padding: 0 10px 20px;
   }
 }
 

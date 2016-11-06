@@ -123,18 +123,18 @@ $button-padding: (
   tiny: 4px 16px 4px 16px,
   small: 5px 20px 5px 20px,
   default: 8px 32px 8px 32px,
-  large: 10px 40px 10px 40px,
+  large: 14px 50px 14px 50px,
 );
 $button-font-size: (
   tiny: 10px,
   small: 12px,
-  default: 16px,
-  large: 20px,
+  default: 12px,
+  large: 14px,
 );
 $button-color: $white;
 $button-color-alt: $medium-gray;
 $button-font-weight: bold;
-$button-margin: 20px 0 0;
+$button-margin: 14px 0 0;
 $button-background: $secondary-color;
 $button-border: 2px solid $button-background;
 $button-radius: $global-radius;
