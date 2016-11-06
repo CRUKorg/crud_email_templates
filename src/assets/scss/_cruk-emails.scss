@@ -42,6 +42,10 @@ center {
   min-width: 100% !important;
 }
 
+.callout {
+  margin: 0 $global-gutter $global-gutter;
+}
+
 .panel {
   margin: 0 $global-gutter $global-gutter;
   padding: $global-gutter 0 0;
