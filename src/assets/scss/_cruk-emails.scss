@@ -47,17 +47,14 @@ center {
 }
 
 .panel {
-  margin: 0 $global-gutter $global-gutter;
-  padding: $global-gutter 0 0;
-  border: 2px solid $lightish-gray;
-  border-radius: 3px;
-}
-
-.panel-blue {
-  margin: 0 0 $global-gutter;
-  padding: $global-gutter 0 0;
   background-color: $primary-color;
   color: $white;
+  margin: 0 0 $global-gutter;
+  border: none;
+  border-radius: 0;
+  .wrapper-inner {
+    padding: $global-gutter 0 0;
+  }
 }
 
 // Preheader block
@@ -207,8 +204,10 @@ center {
 // Social media icons block
 // ------------------------------------
 .social {
-  padding: 10px 0;
   background-color: $lightish-gray;
+  .wrapper-inner {
+    padding: 10px 0;
+  }
 }
 
 // Footer blocks
@@ -218,7 +217,9 @@ center {
 .supporters,
 .footer {
   margin-top: -16px;
-  padding: 20px;
   border-bottom: 2px solid $white;
   background-color: $light-gray;
+  .wrapper-inner {
+    padding: 20px;
+  }
 }
