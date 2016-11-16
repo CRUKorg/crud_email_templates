@@ -222,11 +222,16 @@ center {
 // ------------------------------------
 .partner,
 .sponsors,
+.supporters {
+  background-color: $light-gray;
+}
+
+.partner,
+.sponsors,
 .supporters,
 .footer {
   margin-top: -16px;
   border-bottom: 2px solid $white;
-  background-color: $light-gray;
   .wrapper-inner {
     padding: 20px;
   }
@@ -235,5 +240,13 @@ center {
 .partner {
   h3 {
     margin-top: 0;
+  }
+}
+
+.footer {
+  background-color: $lightish-gray;
+  a {
+    color: #333333;
+    text-decoration: underline;
   }
 }
