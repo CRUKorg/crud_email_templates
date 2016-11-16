@@ -71,7 +71,7 @@ center {
 // Header block
 // ------------------------------------
 
-// Main messsage block
+// Main message block
 // ------------------------------------
 .hero-body {
   background-color: $primary-color;
@@ -203,6 +203,19 @@ center {
 
 .red {
   color: red;
+}
+
+// Transactional content block
+// ------------------------------------
+.transactional-content {
+  .callout {
+    margin-left: $global-gutter;
+    margin-right: $global-gutter;
+    @media only screen and (min-width: $global-breakpoint) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
 
 // Social media icons block
