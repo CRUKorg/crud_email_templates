@@ -42,6 +42,10 @@ center {
   min-width: 100% !important;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .callout {
   margin: 0 $global-gutter $global-gutter;
 }
@@ -199,6 +203,10 @@ center {
 // ------------------------------------
 .shop-item {
   margin: 0;
+}
+
+.red {
+  color: red;
 }
 
 // Social media icons block
