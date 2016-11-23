@@ -60,10 +60,10 @@ center {
 // Preheader block
 // ------------------------------------
 .preheader {
-  color: $cruk-grey;
   background-color: $light-gray;
-  font-size: 12px;
   .wrapper-inner {
+    color: $medium-gray;
+    font-size: 12px;
     padding: 6px 0;
   }
 }
@@ -233,6 +233,9 @@ center {
 .sponsors,
 .supporters {
   background-color: $light-gray;
+  h3 {
+    font-size: 12px;
+  }
 }
 
 .partner,
