@@ -11,29 +11,38 @@ h2,
 h3 {
   margin-top: .5em;
   text-transform: uppercase;
-  color: $primary-color;
+  color: $cruk-black;
   font-weight: $header-font-weight;
 }
 
-.button {
+.cruk-rfl {
+  h1,
+  h2,
+  h3 {
+    color: $cruk-magenta;
+  }
+}
 
+table.menu th.menu-item table.button a {
+  color: $white;
+}
+
+table.button {
+  &,
   &.secondary {
-    a {
-      color: $secondary-color !important;
-      border: 2px solid $secondary-color !important;
-      outline: 2px solid $white !important;
-      background-color: $white !important;
+    table td a,
+    table td a:visited {
+      color: $white;
     }
   }
-
-  &.button-facebook {
-    a {
-      padding-left: 50px !important;
-      color: $white !important;
-      border: 2px solid $facebook-blue !important;
-      outline: 2px solid $white !important;
-      background: url('http://wpm.ccmp.eu/wpm/459/ContentUploads/facebook-icon.png') 0 -2px no-repeat !important;
-      background-color: $facebook-blue !important;
+  &.small {
+    table td {
+      padding: 0;
+    }
+  }
+  &.tiny {
+    table td {
+      padding: 0;
     }
   }
 }
@@ -42,18 +51,26 @@ center {
   min-width: 100% !important;
 }
 
-.callout {
-  margin: 0 $global-gutter $global-gutter;
+table.callout {
+  margin-top: 0;
+  margin-right: $global-margin;
+  margin-bottom: 0;
+  margin-left: $global-margin;
+}
+
+table.row.collapse {
+  th.columns {
+    padding-bottom: 0;
+  }
 }
 
 .panel {
-  background-color: $primary-color;
+  background-color: $secondary-color;
   color: $white;
-  margin: 0 0 $global-gutter;
   border: none;
   border-radius: 0;
   .wrapper-inner {
-    padding: $global-gutter 0 0;
+    padding: $global-padding 0 0;
   }
 }
 
@@ -61,9 +78,19 @@ center {
 // ------------------------------------
 .preheader {
   background-color: $light-gray;
-  .wrapper-inner {
-    color: $medium-gray;
+  .container {
+    background-color: $light-gray;
+  }
+  p {
     font-size: 12px;
+    color: $medium-gray;
+    margin-bottom: 0;
+    a {
+      color: #333333;
+      text-decoration: underline;
+    }
+  }
+  .wrapper-inner {
     padding: 6px 0;
   }
 }
@@ -73,11 +100,8 @@ center {
 
 // Main message block
 // ------------------------------------
-.hero-body {
-  background-color: $primary-color;
-  .wrapper-inner {
-    padding: 20px 20px 0;
-  }
+.hero {
+  background-color: $secondary-color;
   h1,
   h2,
   h3,
@@ -87,10 +111,13 @@ center {
 }
 
 .hero-link {
-  background: url('http://wpm.ccmp.eu/wpm/459/ContentUploads/curve.png') 50% 100% no-repeat;
   .wrapper-inner {
     padding: 0 10px 20px;
   }
+}
+.hero-curve {
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
 }
 
 // Events block
@@ -100,10 +127,6 @@ center {
     margin: 0 !important;
     padding-bottom: 14px;
     border-bottom: 1px solid $lightish-gray;
-  }
-
-  .button {
-    margin-top: 20px;
   }
 
   .event {
@@ -119,7 +142,7 @@ center {
     display: block;
     text-align: center;
     color: $white;
-    font-size: 1.2em;
+    font-size: 17px;
     font-weight: 700;
     line-height: 1;
   }
@@ -129,29 +152,32 @@ center {
     text-align: center;
     text-transform: uppercase;
     color: $white;
-    font-size: small;
+    font-size: 13px;
     font-weight: 500;
     line-height: 1;
   }
 
-  .event-info {
-    padding: 10px 10% 0 10px;
-    background: url('http://wpm.ccmp.eu/wpm/459/ContentUploads/chevron.png') 95% 50% no-repeat;
+  //.event-info {
+  //  padding: 10px 10% 0 10px;
+  //  background: url('http://wpm.ccmp.eu/wpm/459/ContentUploads/chevron.png') 95% 50% no-repeat;
+  //}
+
+  .event-name,
+  .event-date,
+  .event-time {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: $global-margin;
   }
 
   .event-name {
-    display: block;
-    text-transform: uppercase;
-    color: $primary-color;
-    font-weight: 700;
+    color: $secondary-color;
   }
 
   .event-date,
   .event-time {
     color: $dark-gray;
-    display: block;
-    text-transform: uppercase;
-    font-weight: 700;
   }
 }
 
@@ -209,8 +235,8 @@ center {
 // ------------------------------------
 .transactional-content {
   .callout {
-    margin-left: $global-gutter;
-    margin-right: $global-gutter;
+    margin-left: $global-margin;
+    margin-right: $global-margin;
     @media only screen and (min-width: $global-breakpoint) {
       margin-left: 0;
       margin-right: 0;
@@ -222,9 +248,6 @@ center {
 // ------------------------------------
 .social {
   background-color: $lightish-gray;
-  .wrapper-inner {
-    padding: 10px 0;
-  }
 }
 
 // Footer blocks
@@ -234,7 +257,8 @@ center {
 .supporters {
   background-color: $light-gray;
   h3 {
-    font-size: 12px;
+    font-size: 14px;
+    color: #666666;
   }
 }
 
@@ -242,7 +266,6 @@ center {
 .sponsors,
 .supporters,
 .footer {
-  margin-top: -16px;
   border-bottom: 2px solid $white;
   .wrapper-inner {
     padding: 20px;
