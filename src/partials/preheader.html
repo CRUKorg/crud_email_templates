@@ -1,11 +1,23 @@
 <!-- BLOCK START: PREHEADER -->
-<container>
-  <row class="collapse">
-    <columns small="12" large="12">
-      <wrapper class="preheader">
-        <center>If you are unable to read this message, please open <a href="#">the web version</a></center>
-      </wrapper>
-    </columns>
-  </row>
-</container>
+<wrapper class="preheader nospacer">
+    <container>
+      <row class="collapse">
+        <columns small="12" large="7">
+          <p class="small-text-center">
+            {{#if preheaderMessage}}
+              {{preheaderMessage}}
+            {{else}}
+              Use this area to offer a short preview of your email's content.
+            {{/if}}
+          </p>
+        </columns>
+        <columns small="12" large="5">
+          <p class="small-text-center text-right">
+              <a href="{{#if browerVersion}}{{browerVersion}}{{else}}#{{/if}}">View this email in your browser</a>
+          </p>
+        </columns>
+      </row>
+    </container>
+</wrapper>
+<spacer size="14">
 <!-- BLOCK END: PREHEADER -->
