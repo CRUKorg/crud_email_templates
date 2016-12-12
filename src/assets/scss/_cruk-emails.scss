@@ -23,6 +23,26 @@ h3 {
   }
 }
 
+.hide-for-large-FIX {
+  display: none;
+  mso-hide: all;
+  overflow: hidden;
+  max-height: 0;
+  font-size: 0;
+  width: 0;
+  line-height: 0;
+}
+@media only screen and (max-width: 600px) {
+  .hide-for-large-FIX {
+    display: block !important;
+    width: auto !important;
+    overflow: visible !important;
+    max-height: none !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+}
+
 table.menu th.menu-item table.button a {
   color: $white;
 }
