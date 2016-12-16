@@ -111,13 +111,26 @@ table.row.collapse {
     }
   }
   .wrapper-inner {
-    padding: 6px 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
 }
 
 // Header block
 // ------------------------------------
-
+.header {
+  h3 {
+    font-size: 10px;
+    color: #666666;
+    margin-bottom: 4px;
+  }
+  .wrapper-inner {
+    padding-left: $global-padding*2;
+    padding-right: $global-padding*2;
+  }
+}
 // Main message block
 // ------------------------------------
 .hero {
@@ -285,6 +298,7 @@ table.row.collapse {
 
 // Footer blocks
 // ------------------------------------
+
 .partner,
 .sponsors,
 .supporters {
@@ -297,8 +311,7 @@ table.row.collapse {
 
 .partner,
 .sponsors,
-.supporters,
-.footer {
+.supporters {
   border-bottom: 2px solid $white;
   .wrapper-inner {
     padding: 20px;
@@ -316,5 +329,8 @@ table.row.collapse {
   a {
     color: #333333;
     text-decoration: underline;
+  }
+  .wrapper-inner {
+    padding: 20px;
   }
 }
