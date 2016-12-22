@@ -18,7 +18,7 @@
 
 $cruk-white:      #fff;
 $cruk-darkblue:   #2e008b;
-$cruk-magenta:    #ec008c;
+$cruk-magenta:    #e40085;
 $cruk-lightblue:  #00b6ed;
 $cruk-grey:       #a7a8aa;
 $cruk-black:      #333;
@@ -26,15 +26,15 @@ $cruk-black:      #333;
 // 1. Global
 // ---------
 
-$primary-color:   $cruk-darkblue;
-$secondary-color: $cruk-magenta;
+$primary-color: $cruk-magenta;
+$secondary-color: $cruk-darkblue;
 $facebook-blue: #36609f;
 
 $white: $cruk-white;
 $light-gray: lighten($cruk-grey, 30%);
-$lightish-gray: #ddd;
+$lightish-gray: #e3e3e3;
 $medium-gray: $cruk-grey;
-$dark-gray: darken($cruk-grey, 25%);
+$dark-gray: #666666;
 $black: $cruk-black;
 
 $success-color: #3adb76;
@@ -42,7 +42,7 @@ $warning-color: #ffae00;
 $alert-color: #ec5840;
 $pre-color: #ff6908;
 
-$global-width: 580px;
+$global-width: 600px;
 $global-width-small: 100%;
 $global-gutter: 20px;
 
@@ -53,7 +53,7 @@ $global-padding: 16px;
 $global-margin: 16px;
 $global-radius: 3px;
 $global-rounded: 500px;
-$global-breakpoint: $global-width + $global-gutter;
+$global-breakpoint: $global-width;
 
 // 2. Grid
 // -------
@@ -109,10 +109,10 @@ $hr-width: $global-width;
 $hr-border: 1px solid $black;
 $hr-margin: 20px auto;
 
-$anchor-text-decoration: none;
-$anchor-color: $primary-color;
+$anchor-text-decoration: underline;
+$anchor-color: $secondary-color;
 $anchor-color-visited: $anchor-color;
-$anchor-color-hover: darken($primary-color, 10%);
+$anchor-color-hover: darken($secondary-color, 10%);
 $anchor-color-active: $anchor-color-hover;
 $stat-font-size: 40px;
 
@@ -121,22 +121,22 @@ $stat-font-size: 40px;
 
 $button-padding: (
   tiny: 4px 16px 4px 16px,
-  small: 5px 20px 5px 20px,
-  default: 8px 32px 8px 32px,
-  large: 10px 40px 10px 40px,
+  small: 10px 20px 10px 20px,
+  default: 14px 50px 14px 50px,
+  large: 14px 50px 14px 50px,
 );
 $button-font-size: (
   tiny: 10px,
   small: 12px,
-  default: 16px,
-  large: 20px,
+  default: 13px,
+  large: 14px,
 );
 $button-color: $white;
 $button-color-alt: $medium-gray;
 $button-font-weight: bold;
-$button-margin: 20px 0 0;
-$button-background: $secondary-color;
-$button-border: 2px solid $button-background;
+$button-margin: 14px 0 0;
+$button-background: $primary-color;
+$button-border: 0 solid $cruk-magenta;
 $button-radius: $global-radius;
 $button-rounded: $global-rounded;
 
@@ -145,9 +145,9 @@ $button-rounded: $global-rounded;
 
 $callout-background: $white;
 $callout-background-fade: 85%;
-$callout-padding: 10px;
+$callout-padding: $global-gutter 0 0;
 $callout-margin-bottom: $global-margin;
-$callout-border: 1px solid darken($callout-background, 20%);
+$callout-border: 2px solid $lightish-gray;
 $callout-border-secondary: 1px solid darken($secondary-color, 20%);
 $callout-border-success: 1px solid darken($success-color, 20%);
 $callout-border-warning: 1px solid darken($warning-color, 20%);
@@ -158,7 +158,7 @@ $callout-border-alert: 1px solid darken($alert-color, 20%);
 
 $menu-item-padding: 10px;
 $menu-item-gutter: 10px;
-$menu-item-color: $primary-color;
+$menu-item-color: $secondary-color;
 
 // 8. Thumbnail
 // ------------
@@ -166,6 +166,6 @@ $menu-item-color: $primary-color;
 $thumbnail-border: solid 4px $white;
 $thumbnail-margin-bottom: $global-margin;
 $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
-$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-shadow-hover: 0 0 6px 1px rgba($secondary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
