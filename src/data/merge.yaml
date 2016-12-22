@@ -1,0 +1,11 @@
+adobe:
+    MirrorPage: <%@ include view='MirrorPage' %>
+    forename: <%= rtEvent.ctx.forename %>
+    surname: <%= rtEvent.ctx.surname %>
+    eventName: <%= rtEvent.ctx.eventName %>
+    primaryPerson: <%= rtEvent.ctx.primaryPerson %>
+    startDate: <%= rtEvent.ctx.startDate %>
+    startTime: <%= rtEvent.ctx.startTime %>
+    paymentAmount: <%= rtEvent.ctx.paymentAmount %>
+    participantReference: <%= rtEvent.ctx.participantReference %>
+    additionalParticipants: <%= rtEvent.ctx.additionalParticipants %>
