@@ -1,0 +1,10 @@
+<%@ include view='MirrorPage' %>
+
+adobe.intro
+This is <%= rtEvent.ctx.forename %> beating cancer
+
+adobe.eventDetails
+We're so excited you're ready to raise money to fund life-saving research by registering for <%= rtEvent.ctx.eventName %> on <%= rtEvent.ctx.startDate %><% if ( rtEvent.ctx.startTime ) { %> at <%= rtEvent.ctx.startTime %><% } %>.
+
+adobe.registrationDetails
+<% if ( rtEvent.ctx.primaryPerson == 'false' ) { %>You have been registered for this event by <%= rtEvent.ctx.forename %> <%= rtEvent.ctx.surname %>.<% } else { if ( rtEvent.ctx.additionalParticipants == '' ) { %> Thanks for your payment of £<%= rtEvent.ctx.paymentAmount %>, your reference number is: <%= rtEvent.ctx.participantReference %><% } else { %> Thanks for your payment of £<%= rtEvent.ctx.paymentAmount %>, your reference number is: <%= rtEvent.ctx.participantReference %>. You have successfully signed up <%= rtEvent.ctx.additionalParticipants %> to take on the challenge with you.<% }} %>
