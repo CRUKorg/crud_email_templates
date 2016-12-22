@@ -156,8 +156,11 @@ table.row.collapse {
 // Events block
 // ------------------------------------
 .events {
-  padding-left: $global-padding;
-  padding-right: $global-padding;
+
+  .wrapper-inner {
+    padding-left: $global-padding;
+    padding-right: $global-padding;
+  }
 
   h2 {
     margin: 0 !important;
