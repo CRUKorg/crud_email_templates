@@ -16,12 +16,19 @@ h3 {
 }
 
 .cruk-rfl {
-  h1,
-  h2,
-  h3 {
-    color: $cruk-magenta;
+  .body,
+  .container {
+    background: $cruk-magenta;
   }
 }
+
+.cruk-rfl-schools {
+  .body,
+  .container {
+    background: $cruk-lightblue;
+  }
+}
+
 
 .hide-for-large-FIX {
   display: none;
@@ -31,9 +38,7 @@ h3 {
   font-size: 0;
   width: 0;
   line-height: 0;
-}
-@media only screen and (max-width: 600px) {
-  .hide-for-large-FIX {
+  @media only screen and (max-width: 600px) {
     display: block !important;
     width: auto !important;
     overflow: visible !important;
@@ -76,6 +81,12 @@ table.callout {
   margin-right: $global-margin;
   margin-bottom: 0;
   margin-left: $global-margin;
+  @at-root .cruk-rfl & {
+    .callout-inner {
+      border-color: transparent;
+      border-radius: $global-radius;
+    }
+  }
 }
 
 table.row.collapse {
@@ -85,7 +96,7 @@ table.row.collapse {
 }
 
 .panel {
-  background-color: $secondary-color;
+  background: $secondary-color;
   color: $white;
   border: none;
   border-radius: 0;
@@ -97,14 +108,16 @@ table.row.collapse {
 // Preheader block
 // ------------------------------------
 .preheader {
-  background-color: $light-gray;
+  background: $light-gray;
   .container {
-    background-color: $light-gray;
+    background: $light-gray;
   }
   p {
     font-size: 12px;
     color: $medium-gray;
     margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     a {
       color: #333333;
       text-decoration: underline;
@@ -129,17 +142,38 @@ table.row.collapse {
   .wrapper-inner {
     padding-left: $global-padding*2;
     padding-right: $global-padding*2;
+    @at-root .cruk-rfl & {
+      border-color: transparent;
+      border-radius: 3px;
+    }
+  }
+  @at-root .cruk-rfl & {
+    background: white;
+    border-radius: $global-radius $global-radius 0 0;
+    .wrapper-inner {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 }
 // Main message block
 // ------------------------------------
 .hero {
-  background-color: $secondary-color;
+  background: $secondary-color;
   h1,
   h2,
   h3,
   p {
     color: $white;
+  }
+  @at-root .cruk-rfl & {
+    background: $white;
+    h1,
+    h2,
+    h3,
+    p {
+      color: $global-font-color !important;
+    }
   }
 }
 
@@ -177,7 +211,7 @@ table.row.collapse {
   }
 
   .event-calendar-wrapper {
-    background-color: $secondary-color;
+    background: $secondary-color;
     border-radius: $global-radius;
     width: 45px;
     .wrapper-inner {
@@ -296,14 +330,15 @@ table.row.collapse {
 // Social media icons block
 // ------------------------------------
 .social {
-  background-color: $lightish-gray;
+  background: $lightish-gray;
+  border-bottom: 2px solid $white;
 }
 
 // Footer blocks
 // ------------------------------------
 
 .affiliates {
-  background-color: $light-gray;
+  background: $light-gray;
   border-bottom: 2px solid $white;
   .wrapper-inner {
     padding: 20px;
@@ -317,12 +352,15 @@ table.row.collapse {
 }
 
 .footer {
-  background-color: $lightish-gray;
+  background: $lightish-gray;
   a {
     color: #333333;
     text-decoration: underline;
   }
   .wrapper-inner {
     padding: 20px;
+  }
+  .container {
+    background: transparent;
   }
 }
