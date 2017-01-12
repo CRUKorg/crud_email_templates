@@ -118,7 +118,7 @@ table.row.collapse {
     margin-left: 10px;
     margin-right: 10px;
     a {
-      color: #333333;
+      color: $cruk-black;
       text-decoration: underline;
     }
   }
@@ -353,7 +353,7 @@ table.row.collapse {
 .footer {
   background: $lightish-gray;
   a {
-    color: #333333;
+    color: $cruk-black;
     text-decoration: underline;
   }
   .wrapper-inner {
