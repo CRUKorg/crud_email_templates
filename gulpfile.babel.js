@@ -24,7 +24,7 @@ var CONFIG;
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build',
-  gulp.series(clean, pages, sass, images, inline));
+  gulp.series(clean, pages, sass, inline));
 
 // Build emails, run the server, and watch for file changes
 gulp.task('default',
@@ -32,7 +32,7 @@ gulp.task('default',
 
 // Build emails, then send to litmus
 gulp.task('litmus',
-  gulp.series('build', creds, aws, litmus));
+  gulp.series('build', creds, litmus));
 
 // Build emails, then send to litmus
 gulp.task('mail',
