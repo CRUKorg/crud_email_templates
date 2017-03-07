@@ -1,11 +1,13 @@
 ---
 subject: My Email Subject
 pageClass: cruk-rfl
-unsubscribe: '{[Siebel Marketing Opt out|3702]}​'
+unsubscribe: '{{MCMP Unsubscribe URL}}'
+mirror: '{{MCMP Mirror Page Link}}'
 ---
-{{> preheader_cruk-rfl }}
+{{> mcmp/preheader_cruk-rfl }}
 {{> mcmp/header_cruk-rfl }}
 {{> mcmp/hero_cruk-rfl }}
+{{> mcmp/letter }}
 {{> mcmp/event-details }}
 {{> events }}
 {{> mcmp/main-story }}
