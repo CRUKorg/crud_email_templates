@@ -19,7 +19,8 @@ const $ = plugins();
 const PRODUCTION = !!(yargs.argv.production);
 const EMAIL = yargs.argv.to;
 
-PRODUCTION ? process.env.NODE_ENV = 'production' : process.env.NODE_ENV = ''
+// If --production flag used set NODE_ENV to production
+process.env.NODE_ENV = PRODUCTION ? 'production' : ''
 
 // Declar var so that both AWS and Litmus task can use it.
 var CONFIG;
