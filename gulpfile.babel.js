@@ -12,14 +12,12 @@ import path     from 'path';
 import merge    from 'merge-stream';
 import beep     from 'beepbeep';
 import colors   from 'colors';
-import gutil    from 'gulp-util';
 
 const $ = plugins();
 
 // Look for the --production flag
 const PRODUCTION = !!(yargs.argv.production);
 const EMAIL = yargs.argv.to;
-gutil.log(PRODUCTION);
 
 PRODUCTION ? process.env.NODE_ENV = 'production' : process.env.NODE_ENV = ''
 
