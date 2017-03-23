@@ -3,7 +3,7 @@
   <container>
     <row class="collapse">
       <columns small="12" large="12">
-        <p><small><img src="{{assetUrl}}/fundraising-regulator-logo.png" align="left" hspace="0" vspace="0" width="167" height="63" />If you do not wish to receive any emails about Cancer Research UK activities in the future, please <a href="{{#if unsubscribe}}{{unsubscribe}}{{else}}#{{/if}}">unsubscribe here</a>. Please note that if you currently receive any other information from Cancer Research UK by email, you will no longer do so if you unsubscribe.</small></p>
+        <p><small><img src="{{#if globals.production}}{{baseURL}}{{else}}{{root}}assets/img{{/if}}/fundraising-regulator-logo.png" align="left" hspace="0" vspace="0" width="167" height="63" />{{#if unsubscribe}}{{unsubscribe}}{{else}}#{{/if}}Please note that if you currently receive any other information from Cancer Research UK by email, you will no longer do so if you unsubscribe.</small></p>
         <p><small>Our supporters are at the heart of everything we achieve at Cancer Research UK.<br><a href="http://www.cancerresearchuk.org/about-us/our-promise">Read our Fundraising Promise.</a></small></p>
         <p><small>This email is from <a href="http://www.cancerresearchuk.org">Cancer Research UK</a>. Cancer Research UK is a registered charity in England and Wales (1089464), Scotland (SC041666) and the Isle of Man (1103). A company limited by guarantee. Registered company in England and Wales (4325234) and the Isle of Man (5713F). Registered address: Angel Building, 407 St John Street, London EC1V 4AD.</small></p>
       </columns>

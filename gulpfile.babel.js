@@ -19,12 +19,15 @@ const $ = plugins();
 const PRODUCTION = !!(yargs.argv.production);
 const EMAIL = yargs.argv.to;
 
+// If --production flag used set NODE_ENV to production
+process.env.NODE_ENV = PRODUCTION ? 'production' : ''
+
 // Declar var so that both AWS and Litmus task can use it.
 var CONFIG;
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build',
-  gulp.series(clean, pages, sass, inline));
+  gulp.series(clean, pages, sass, images, inline));
 
 // Build emails, run the server, and watch for file changes
 gulp.task('default',
@@ -56,7 +59,8 @@ function pages() {
       root: 'src/pages',
       layouts: 'src/layouts',
       partials: 'src/partials',
-      helpers: 'src/helpers'
+      helpers: 'src/helpers',
+      data: 'src/data'
     }))
     .pipe(inky())
     .pipe(gulp.dest('dist'));
@@ -86,7 +90,6 @@ function sass() {
 // Copy and compress images
 function images() {
   return gulp.src('src/assets/img/**/*')
-    .pipe($.imagemin())
     .pipe(gulp.dest('./dist/assets/img'));
 }
 
@@ -123,7 +126,7 @@ function inliner(css) {
       applyStyleTags: false,
       removeStyleTags: true,
       preserveMediaQueries: true,
-      removeLinkTags: false
+      removeLinkTags: true
     })
     .pipe($.replace, '<!-- <style> -->', `<style>${mqCss}</style>`)
     .pipe($.replace, '<link rel="stylesheet" type="text/css" href="css/app.css">', '')
