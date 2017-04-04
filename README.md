@@ -44,21 +44,25 @@ git clone git@github.com:CRUKorg/cruk_email_templates.git
 npm install
 ```
 
-3. Run the following command to compile code and watch for changes.
+3. Create a feature branch for your changes.
+
+4. Run the following command to compile code and watch for changes.
 ```bash
 npm start
 ```
 This will open a browser with Browsersync showing the result. The browser will auto-update when you edit source files. Assets will be sourced from the local directory `dist/assets/img`.
 
-4. Edit source files in `src/` directory.
+5. Edit source files in `src/` directory.
 
-5. When you are ready to commit changes; upload the images to the mail transfer agent (MTA) and compile source code by running the build command.
+6. Commit your changes and push your feature branch to remote. On GitHub create a pull request against the develop branch.
+
+7. When you are ready to publish your changes; upload the images to the mail transfer agent (MTA) and compile source code by running the build command.
 ```bash
 npm run build
 ```
-This will compile the code using the baseURL variable to point to images uploaded to the MTA.
+This will compile image URLs using the baseURL variable to point to images uploaded to the MTA.
 
-6. Copy the HTML from the template files in `dist/` into your MTA.
+8. Copy the HTML from the template files in `dist/` into your MTA.
 
 ## Deployment
 
