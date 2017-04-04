@@ -6,7 +6,7 @@ The HTML templates for CRUK emails use the ZURB Foundation for Emails framework.
 
 ### MCMP Templates
 
-* [CRUK Campaign](https://litmus.com/builder/677040f)
+* [CRUK Campaign](https://litmus.com/builder/6114cbd)
 * [CRUK Transactional](https://litmus.com/builder/64fdbc7)
 * [CRUK RFL Campaign](https://litmus.com/builder/0de4926)
 * [CRUK RFL Transactional](https://litmus.com/builder/6392e82)
