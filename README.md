@@ -7,11 +7,14 @@ The HTML templates for CRUK emails use the ZURB Foundation for Emails framework.
 ### MCMP Templates
 
 * [CRUK Campaign](https://litmus.com/builder/6114cbd)
+* [CRUK In-Series](https://litmus.com/builder/6b0d08b)
 * [CRUK Transactional](https://litmus.com/builder/64fdbc7)
 * [CRUK RFL Campaign](https://litmus.com/builder/0de4926)
+* [CRUK RFL In-Series](https://litmus.com/builder/8016ed0)
 * [CRUK RFL Transactional](https://litmus.com/builder/6392e82)
 * [CRUK RFL Transactional - Event registration confirmation](https://litmus.com/builder/8222198)
 * [CRUK RFL Schools Campaign](https://litmus.com/builder/6d01e2f)
+* [CRUK RFL Schools In-Series](https://litmus.com/builder/db6e565)
 * [CRUK RFL Schools Transactional](https://litmus.com/builder/941c1fc)
 
 
