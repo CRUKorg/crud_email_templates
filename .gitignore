@@ -2,8 +2,7 @@
 node_modules
 npm-debug.log
 bower_components
-dist/css
-dist/assets/img
+dist
 .sass-cache
 .awspublish*
 config.json

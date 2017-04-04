@@ -6,12 +6,15 @@ The HTML templates for CRUK emails use the ZURB Foundation for Emails framework.
 
 ### MCMP Templates
 
-* [CRUK Campaign](https://litmus.com/builder/677040f)
+* [CRUK Campaign](https://litmus.com/builder/6114cbd)
+* [CRUK In-Series](https://litmus.com/builder/6b0d08b)
 * [CRUK Transactional](https://litmus.com/builder/64fdbc7)
 * [CRUK RFL Campaign](https://litmus.com/builder/0de4926)
+* [CRUK RFL In-Series](https://litmus.com/builder/8016ed0)
 * [CRUK RFL Transactional](https://litmus.com/builder/6392e82)
 * [CRUK RFL Transactional - Event registration confirmation](https://litmus.com/builder/8222198)
 * [CRUK RFL Schools Campaign](https://litmus.com/builder/6d01e2f)
+* [CRUK RFL Schools In-Series](https://litmus.com/builder/db6e565)
 * [CRUK RFL Schools Transactional](https://litmus.com/builder/941c1fc)
 
 
@@ -44,21 +47,25 @@ git clone git@github.com:CRUKorg/cruk_email_templates.git
 npm install
 ```
 
-3. Run the following command to compile code and watch for changes.
+3. Create a feature branch for your changes.
+
+4. Run the following command to compile code and watch for changes.
 ```bash
 npm start
 ```
 This will open a browser with Browsersync showing the result. The browser will auto-update when you edit source files. Assets will be sourced from the local directory `dist/assets/img`.
 
-4. Edit source files in `src/` directory.
+5. Edit source files in `src/` directory.
 
-5. When you are ready to commit changes; upload the images to the mail transfer agent (MTA) and compile source code by running the build command.
+6. Commit your changes and push your feature branch to remote. On GitHub create a pull request against the develop branch.
+
+7. When you are ready to publish your changes; upload the images to the mail transfer agent (MTA) and compile source code by running the build command.
 ```bash
 npm run build
 ```
-This will compile the code using the baseURL variable to point to images uploaded to the MTA.
+This will compile image URLs using the baseURL variable to point to images uploaded to the MTA.
 
-6. Copy the HTML from the template files in `dist/` into your MTA.
+8. Copy the HTML from the template files in `dist/` into your MTA.
 
 ## Deployment
 
