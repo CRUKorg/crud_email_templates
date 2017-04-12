@@ -29,6 +29,77 @@ h3 {
   }
 }
 
+.su2c {
+  .body,
+  .container {
+    background: $su2c-orange;
+  }
+
+  .preheader + .spacer {
+    /* Fix this */
+    background: $white;
+  }
+
+  .container.header {
+    background: $white;
+    width: 100%;
+
+    .row {
+      width: 600px;
+      margin: auto;
+    }
+  }
+
+  .container.hero {
+    width: 100%;
+
+    .row.hero {
+      width: 600px;
+      margin: auto;
+    }
+  }
+
+  .transactional-content {
+    margin-top: 18px;
+  }
+
+  .events {
+    .event-calendar-wrapper {
+      background: $su2c-orange;
+    }
+
+    .event-info a {
+      color: $su2c-orange;
+      text-decoration: none;
+    }
+  }
+
+  .donate {
+    background: $white;
+
+    p {
+      color: $black;
+    }
+  }
+
+  .button {
+    text-transform: uppercase;
+
+    a {
+      background-image: url('http://res.comms.cancerresearchuk.org/res/cancerr_mkt_prod1/su2c-arrow-white.png');
+      background-color: $su2c-orange;
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+
+      border-radius: 0;
+    }
+
+    &.small a {
+      background-image: none;
+    }
+  }
+}
+
 .hide-for-large-FIX {
   display: none;
   mso-hide: all;
@@ -84,6 +155,11 @@ table.callout {
     .callout-inner {
       border-color: transparent;
       border-radius: $global-radius;
+    }
+  }
+  @at-root .su2c {
+    .callout-inner {
+      border-color: $cruk-white;
     }
   }
 }
@@ -147,7 +223,7 @@ table.row.collapse {
     }
   }
   @at-root .cruk-rfl & {
-    background: white;
+    background: $cruk-white;
     border-radius: $global-radius $global-radius 0 0;
     .wrapper-inner {
       padding-top: 10px;
@@ -172,6 +248,15 @@ table.row.collapse {
     h3,
     p {
       color: $global-font-color !important;
+    }
+  }
+  @at-root .su2c & {
+    background: $white;
+    h1,
+    h2,
+    h3,
+    p {
+      color: $black !important;
     }
   }
 }
