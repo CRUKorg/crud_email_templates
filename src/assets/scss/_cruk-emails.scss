@@ -176,6 +176,47 @@ table.row.collapse {
   }
 }
 
+.power-hero {
+  display: block !important;
+  height: 260px;
+  overflow: hidden;
+
+  background-color: $secondary-color;
+
+  h1,
+  p {
+    font-size: 24px;
+    text-transform: none;
+    color: $white;
+  }
+
+  .columns {
+    padding-bottom: 0 !important;
+
+    &.first {
+      padding-right: 20px;
+    }
+
+    &.last {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      background-color: white;
+    }
+  }
+
+  .button {
+    position: absolute;
+    bottom: 21px;
+
+    & a {
+      width: 132px;
+      padding-left: 21px;
+      padding-right: 21px;
+      text-align: center;
+    }
+  }
+}
+
 .hero-link {
   .wrapper-inner {
     padding: 0 10px 20px;
