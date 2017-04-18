@@ -45,8 +45,16 @@ h3 {
     width: 100%;
 
     .row {
-      width: 600px;
+      max-width: 600px;
       margin: auto;
+    }
+
+    .logo-su2c {
+      margin-left: 20px;
+    }
+
+    .logo-cruk-c4 {
+      margin-right: 20px;
     }
   }
 
@@ -54,7 +62,7 @@ h3 {
     width: 100%;
 
     .row.hero {
-      width: 600px;
+      max-width: 600px;
       margin: auto;
     }
   }
