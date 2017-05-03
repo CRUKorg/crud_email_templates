@@ -15,10 +15,36 @@ h3 {
   font-weight: $header-font-weight;
 }
 
+.cruk-bmf {
+  .button a {
+    background-color: $cruk-bmf-red;
+  }
+}
+
 .cruk-rfl {
   .body,
   .container {
     background: $cruk-magenta;
+  }
+
+  .power-hero-header {
+    border-radius: 0 !important;
+    background-color: white;
+  }
+
+  .power-hero-container {
+    background-color: white;
+  }
+
+  .power-hero {
+    .button a {
+      background-color: white;
+      color: $cruk-magenta;
+    }
+  }
+
+  .power-hero-title {
+    text-transform: uppercase;
   }
 }
 
@@ -35,19 +61,8 @@ h3 {
     background: $su2c-orange;
   }
 
-  .preheader + .spacer {
-    /* Fix this */
-    background: $white;
-  }
-
   .container.header {
     background: $white;
-    width: 100%;
-
-    .row {
-      max-width: 600px;
-      margin: auto;
-    }
 
     .logo-su2c {
       margin-left: 20px;
@@ -58,17 +73,12 @@ h3 {
     }
   }
 
-  .container.hero {
-    width: 100%;
+  .power-hero-container {
+    background-color: white;
 
-    .row.hero {
-      max-width: 600px;
+    .row {
       margin: auto;
     }
-  }
-
-  .transactional-content {
-    margin-top: 18px;
   }
 
   .events {
@@ -100,6 +110,11 @@ h3 {
       background-position: right 8px center;
 
       border-radius: 0;
+      border: 0 solid $su2c-orange;
+    }
+
+    td {
+      background: $su2c-orange;
     }
 
     &.small a {
@@ -249,7 +264,7 @@ table.row.collapse {
   p {
     color: $white;
   }
-  @at-root .cruk-rfl & {
+  @at-root .cruk-rfl &, .cruk-bmf & {
     background: $white;
     h1,
     h2,
@@ -266,6 +281,92 @@ table.row.collapse {
     p {
       color: $black !important;
     }
+  }
+}
+
+.header-wrapper {
+  width: 100%;
+  background-color: white;
+
+  @at-root .su2c & {
+    .wrapper-inner {
+      padding-top: 14px;
+    }
+  }
+}
+
+.power-hero {
+  display: block !important;
+  height: 260px;
+  overflow: hidden;
+
+  background-color: $secondary-color;
+
+  h1,
+  p {
+    font-size: 24px;
+    text-transform: none;
+    color: $white;
+  }
+
+  .columns {
+    padding-bottom: 0 !important;
+
+    &.first {
+      padding-right: 20px;
+    }
+
+    &.last {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      background-color: white;
+    }
+  }
+
+  .button {
+    position: absolute;
+    bottom: 21px;
+
+    & a {
+      padding-left: 28px;
+      padding-right: 28px;
+      text-align: center;
+
+      @at-root .su2c & {
+        padding-left: 0;
+        text-align: left;
+        text-decoration: underline;
+        background-image: none;
+      }
+    }
+
+    @at-root .su2c & {
+      position: absolute;
+      bottom: 28px;
+    }
+  }
+
+  .power-hero-title a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+
+    @at-root .cruk-rfl & {
+      text-transform: uppercase;
+    }
+
+    @at-root .su2c & {
+      text-transform: uppercase;
+      color: black;
+    }
+  }
+
+  @at-root .cruk-rfl & {
+    background-color: $cruk-magenta;
+  }
+
+  @at-root .su2c & {
+    background-color: $su2c-orange;
   }
 }
 
@@ -305,10 +406,13 @@ table.row.collapse {
   .event-calendar-wrapper {
     background: $secondary-color;
     border-radius: $global-radius;
-    width: 45px;
+    width: 54px;
+    min-width: 54px;
     .wrapper-inner {
       padding-top: 12px;
+      padding-right: 0;
       padding-bottom: 12px;
+      padding-left: 0;
     }
   }
 

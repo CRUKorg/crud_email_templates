@@ -5,7 +5,10 @@ mirror: '{{MCMP Mirror Page}}'
 baseURL: '{{MCMP Base URL}}'
 ---
 {{> preheader }}
-{{> header-su2c }}
+<wrapper class="header-wrapper">
+  {{> header-su2c }}
+</wrapper>
+<spacer />
 {{> content_transactional }}
 {{> social_su2c }}
 {{> footer_transactional_su2c }}

@@ -1,12 +1,16 @@
 ---
 subject: My Email Subject
 pageClass: cruk-rfl
+unsubscribe: '{{MCMP R4L Unsubscribe}}'
 mirror: '{{MCMP Mirror Page}}'
 baseURL: '{{MCMP Base URL}}'
 ---
 {{> preheader }}
-{{> header_cruk-rfl }}
-{{> hero_cruk-rfl }}
+<wrapper class="header-wrapper">
+  {{> power-hero-header_cruk-rfl }}
+  {{> power-hero_cruk-rfl }}
+</wrapper>
+<spacer />
 {{> letter }}
 {{> event-details }}
 {{> events }}
@@ -21,4 +25,4 @@ baseURL: '{{MCMP Base URL}}'
 {{> up-3_col-3 }}
 {{> social_cruk-rfl }}
 {{> affiliates_cruk-rfl }}
-{{> footer_transactional_cruk-rfl }}
+{{> footer_campaign }}

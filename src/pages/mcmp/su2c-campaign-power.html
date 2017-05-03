@@ -1,12 +1,16 @@
 ---
 subject: My Email Subject
-pageClass: cruk-rfl
+pageClass: su2c
+unsubscribe: '{{MCMP Unsubscribe}}'
 mirror: '{{MCMP Mirror Page}}'
 baseURL: '{{MCMP Base URL}}'
 ---
 {{> preheader }}
-{{> header_cruk-rfl }}
-{{> hero_cruk-rfl }}
+<wrapper class="header-wrapper">
+  {{> header-su2c }}
+  {{> power-hero_su2c }}
+</wrapper>
+<spacer />
 {{> letter }}
 {{> event-details }}
 {{> events }}
@@ -19,6 +23,6 @@ baseURL: '{{MCMP Base URL}}'
 {{> shop }}
 {{> share }}
 {{> up-3_col-3 }}
-{{> social_cruk-rfl }}
-{{> affiliates_cruk-rfl }}
-{{> footer_transactional_cruk-rfl }}
+{{> social_su2c }}
+{{> affiliates }}
+{{> footer_campaign_su2c }}
