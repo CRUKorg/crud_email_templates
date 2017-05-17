@@ -16,7 +16,10 @@ The HTML templates for CRUK emails use the ZURB Foundation for Emails framework.
 * [CRUK RFL Schools Campaign](https://litmus.com/builder/6d01e2f)
 * [CRUK RFL Schools In-Series](https://litmus.com/builder/db6e565)
 * [CRUK RFL Schools Transactional](https://litmus.com/builder/941c1fc)
-
+* [CRUK Bobby Moore Fund Campaign](https://litmus.com/builder/c7394f7)
+* [CRUK Bobby Moore Fund Transactional](https://litmus.com/builder/9d98586)
+* [SU2C Campaign](https://litmus.com/builder/890ec44)
+* [SU2C Transactional](https://litmus.com/builder/2e8de51)
 
 ### CCMP Templates
 
@@ -25,6 +28,10 @@ The HTML templates for CRUK emails use the ZURB Foundation for Emails framework.
 * [CRUK RFL Campaign](https://litmus.com/builder/48d90c0)
 * [CRUK RFL Transactional](https://litmus.com/builder/01b415a)
 * [CRUK RFL Schools Campaign](https://litmus.com/builder/a83d8e1)
+* [CRUK Bobby Moore Fund Campaign](https://litmus.com/builder/6894176)
+* [CRUK Bobby Moore Fund Transactional](https://litmus.com/builder/65061df)
+* [SU2C Campaign](https://litmus.com/builder/26e7f07)
+* [SU2C Transactional](https://litmus.com/builder/8c53026)
 
 **If you want to create your own custom blocks or contribute to the repo, please follow these instructions.**
 
