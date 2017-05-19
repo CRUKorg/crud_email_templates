@@ -481,6 +481,10 @@ table.row.collapse {
 
   .button {
     margin-top: 0;
+
+    a {
+      min-width: 70px;
+    }
   }
 }
 
