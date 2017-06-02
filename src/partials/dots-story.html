@@ -1,0 +1,38 @@
+<!-- BLOCK START: 1 UP 2 COLUMN IMAGE CAPTION -->
+<container>
+  <callout class="stories">
+
+    <!-- BLOCK ROW START:CONTENT -->
+    <row>
+      <columns small="12" large="6">
+        <center>
+          <img border="0" style="border: 0; display: block;" width="250" height="250" 
+            src="{{#if globals.production}}{{baseURL}}{{else}}{{root}}assets/img{{/if}}/square-250.jpg"/>
+        </center>
+      </columns>
+      <columns small="12" large="6">
+        <h2>BECAUSE OF YOU, <!-- <%= rtEvent.ctx.firstName %>--></h2>
+        <p>
+          <!-- <% if ( rtEvent.ctx.singleDonation == "1" ) { %>-->
+            Thanks to regular donations like yours, Alex survived cancer and doesn’t need to worry about missing 
+            precious moments with her family any more.
+          <!-- <% } else { %>-->
+            Thanks to donations like yours, Alex survived cancer and doesn’t need to worry about missing precious 
+            moments with her family any more.
+          <!-- <% } %>-->
+        </p>
+        <center>
+          <button class="radius expanded"
+            href="http://www.cancerresearchuk.org/support-us/donate/because-of-you/hear-more-stories"
+          >
+            Who your money helps
+          </button>
+        </center>
+      </columns>
+    </row>
+    <!-- BLOCK ROW END:CONTENT -->
+
+  </callout>
+</container>
+<spacer />
+<!-- BLOCK END: 1 UP 2 COLUMN IMAGE CAPTION -->
