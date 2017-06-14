@@ -40,16 +40,22 @@ The HTML templates for CRUK emails use the ZURB Foundation for Emails framework.
 ## Dependencies
 
 * [Node.js](https://nodejs.org/en/) via [NVM](https://github.com/creationix/nvm).
-* [NPM](https://www.npmjs.com/) for Node.js package management.
+* [Yarn](https://yarnpkg.com/en/) or [NPM](https://www.npmjs.com/) for Node.js package management.
 
 ## Installation
 
 1. Clone the repository
+
 ```bash
 git clone git@github.com:CRUKorg/cruk_email_templates.git
 ```
 
 2. Run the install
+
+```bash
+yarn
+```
+or
 ```bash
 npm install
 ```
@@ -57,9 +63,15 @@ npm install
 3. Create a feature branch for your changes.
 
 4. Run the following command to compile code and watch for changes.
+
+```bash
+yarn start
+```
+or
 ```bash
 npm start
 ```
+
 This will open a browser with Browsersync showing the result. The browser will auto-update when you edit source files. Assets will be sourced from the local directory `dist/assets/img`.
 
 5. Edit source files in `src/` directory.
@@ -67,9 +79,15 @@ This will open a browser with Browsersync showing the result. The browser will a
 6. Commit your changes and push your feature branch to remote. On GitHub create a pull request against the develop branch.
 
 7. When you are ready to publish your changes; upload the images to the mail transfer agent (MTA) and compile source code by running the build command.
+
+```bash
+yarn build
+```
+or
 ```bash
 npm run build
 ```
+
 This will compile image URLs using the baseURL variable to point to images uploaded to the MTA.
 
 8. Copy the HTML from the template files in `dist/` into your MTA.
