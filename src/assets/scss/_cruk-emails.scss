@@ -1,14 +1,12 @@
 // General styles
 // ------------------------------------
-* {
+h1, h2, h3, h4, h5, h6, p, span {
   -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3, h4, h5, h6 {
   margin-top: .5em;
   text-transform: uppercase;
   color: $cruk-black;
@@ -254,27 +252,18 @@ table.row.collapse {
 // ------------------------------------
 .hero {
   background: $secondary-color;
-  h1,
-  h2,
-  h3,
-  p {
+  h1, h2, h3, h4, h5, h6, p {
     color: $white;
   }
   @at-root .cruk-rfl &, .cruk-bmf & {
     background: $white;
-    h1,
-    h2,
-    h3,
-    p {
+    h1, h2, h3, h4, h5, h6, p {
       color: $global-font-color !important;
     }
   }
   @at-root .su2c & {
     background: $white;
-    h1,
-    h2,
-    h3,
-    p {
+    h1, h2, h3, h4, h5, h6, p {
       color: $black !important;
     }
   }
