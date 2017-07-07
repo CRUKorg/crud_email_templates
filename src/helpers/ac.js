@@ -1,9 +1,9 @@
 /**
- * Any code used inside this helper is ignored by Handlebars. Use it if your email service provider uses a Handlebars-like syntax.
+ * This will wrap Javascript for use in Adobe Campaign in Litmus partials that will be replaced by the correct wrapper tags in Litmus.
  * @example
- * {{{{ac}}}}
- * {{ this }} code won't be parsed.
- * {{{{/ac}}}}
+ * {{ac}}
+ * if (targetData.firstName !== '') {
+ * {{/ac}}
  */
 
 module.exports = function(options) {
