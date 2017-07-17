@@ -15,19 +15,19 @@
         <spacer size="10"></spacer>
 
         <p>
-          We're so excited you're ready to raise money to fund life-saving research by registering for {{#acp}} rtEvent.ctx.eventname {{/acp}} on {{#acp}}= rtEvent.ctx.startdate {{/ac}}
-          {{#ac}} if ( rtEvent.ctx.starttime ) { {{/ac}} at {{#acp}}= rtEvent.ctx.starttime {{/acp}} {{#ac}} } {{/ac}}.
+          We're so excited you're ready to raise money to fund life-saving research by registering for {{#acp}} rtEvent.ctx.eventname {{/acp}} on {{#acp}} rtEvent.ctx.startdate {{/acp}}
+          {{#ac}} if ( rtEvent.ctx.starttime ) { {{/ac}} at {{#acp}} rtEvent.ctx.starttime {{/acp}} {{#ac}} } {{/ac}}.
         </p>
         <p>
           {{#ac}} if ( rtEvent.ctx.primaryperson == 'false' ) { {{/ac}}
-            you have been registered for this event by {{#acp}}= rtEvent.ctx.primaryparticipantname {{/acp}}.
+            you have been registered for this event by {{#acp}} rtEvent.ctx.primaryparticipantname {{/acp}}.
           {{#ac}} } else { {{/ac}}
             {{#ac}} if ( rtEvent.ctx.paymentamount !== 'null' ) { {{/ac}}
-              thanks for your payment of £ {{#acp}}= rtEvent.ctx.paymentamount {{/acp}}.
+              thanks for your payment of £ {{#acp}} rtEvent.ctx.paymentamount {{/acp}}.
             {{#ac}} } {{/ac}}
           {{#ac}} } {{/ac}}
-          Your reference number is: {{#acp}}= rtEvent.ctx.participantreference {{/acp}}.
-          {{#ac}} if ( rtEvent.ctx.additionalparticipants !== '' ) { {{/ac}} You have successfully signed up {{#acp}}= rtEvent.ctx.additionalparticipants {{/acp}} to take on the challenge with you.{{#ac}} } {{/ac}}
+          Your reference number is: {{#acp}} rtEvent.ctx.participantreference {{/acp}}.
+          {{#ac}} if ( rtEvent.ctx.additionalparticipants !== '' ) { {{/ac}} You have successfully signed up {{#acp}} rtEvent.ctx.additionalparticipants {{/acp}} to take on the challenge with you.{{#ac}} } {{/ac}}
         </p>
 
         <spacer size="5"></spacer>
