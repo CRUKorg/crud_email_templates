@@ -15,24 +15,24 @@
         <spacer size="10"></spacer>
 
         <p>
-          We're so excited you're ready to raise money to fund life-saving research by registering for {{#acp}} rtEvent.ctx.eventname {{/acp}} on {{#acp}} rtEvent.ctx.startdate {{/acp}}
-          {{#ac}} if ( rtEvent.ctx.starttime ) { {{/ac}} at {{#acp}} rtEvent.ctx.starttime {{/acp}} {{#ac}} } {{/ac}}.
+          We're so excited you're ready to raise money to fund life-saving research by registering for {{#acp}} rtEvent.ctx.eventName {{/acp}} on {{#acp}} rtEvent.ctx.startDate {{/acp}}
+          {{#ac}} if ( rtEvent.ctx.startTime ) { {{/ac}} at {{#acp}} rtEvent.ctx.startTime {{/acp}} {{#ac}} } {{/ac}}.
         </p>
         <p>
-          {{#ac}} if ( rtEvent.ctx.primaryperson == 'false' ) { {{/ac}}
-            you have been registered for this event by {{#acp}} rtEvent.ctx.primaryparticipantname {{/acp}}.
+          {{#ac}} if ( rtEvent.ctx.primaryPerson == 'false' ) { {{/ac}}
+            You have been registered for this event by {{#acp}} rtEvent.ctx.primaryParticipantName {{/acp}}.
           {{#ac}} } else { {{/ac}}
-            {{#ac}} if ( rtEvent.ctx.paymentamount !== 'null' ) { {{/ac}}
-              thanks for your payment of £ {{#acp}} rtEvent.ctx.paymentamount {{/acp}}.
+            {{#ac}} if ( rtEvent.ctx.paymentAmount != 'null' ) { {{/ac}}
+              Thanks for your payment of £ {{#acp}} rtEvent.ctx.paymentAmount {{/acp}}.
             {{#ac}} } {{/ac}}
           {{#ac}} } {{/ac}}
-          Your reference number is: {{#acp}} rtEvent.ctx.participantreference {{/acp}}.
-          {{#ac}} if ( rtEvent.ctx.additionalparticipants !== '' ) { {{/ac}} You have successfully signed up {{#acp}} rtEvent.ctx.additionalparticipants {{/acp}} to take on the challenge with you.{{#ac}} } {{/ac}}
+          Your reference number is: {{#acp}} rtEvent.ctx.participantReference {{/acp}}.
+          {{#ac}} if ( rtEvent.ctx.additionalParticipants != '' ) { {{/ac}} You have successfully signed up {{#acp}} rtEvent.ctx.additionalParticipants {{/acp}} to take on the challenge with you.{{#ac}} } {{/ac}}
         </p>
 
         <spacer size="5"></spacer>
 
-        {{#ac}} if ( rtEvent.ctx.primaryperson == 'true' ) { {{/ac}}
+        {{#ac}} if ( rtEvent.ctx.primaryPerson == 'true' ) { {{/ac}}
           <p>
             Please note that this fee is non-refundable unless the event is cancelled or the time/date/venue changes significantly and you're no longer able to attend.
           </p>
