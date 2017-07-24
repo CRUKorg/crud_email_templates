@@ -1,14 +1,12 @@
 // General styles
 // ------------------------------------
-* {
+h1, h2, h3, h4, h5, h6, p, span {
   -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3, h4, h5, h6 {
   margin-top: .5em;
   text-transform: uppercase;
   color: $cruk-black;
@@ -64,6 +62,10 @@ h3 {
   .container.header {
     background: $white;
 
+    .last {
+      float: right;
+    }
+
     .logo-su2c {
       margin-left: 20px;
     }
@@ -104,11 +106,7 @@ h3 {
     text-transform: uppercase;
 
     a {
-      background-image: url('http://res.comms.cancerresearchuk.org/res/cancerr_mkt_prod1/su2c-arrow-white.png');
       background-color: $su2c-orange;
-      background-repeat: no-repeat;
-      background-position: right 8px center;
-
       border-radius: 0;
       border: 0 solid $su2c-orange;
     }
@@ -258,27 +256,18 @@ table.row.collapse {
 // ------------------------------------
 .hero {
   background: $secondary-color;
-  h1,
-  h2,
-  h3,
-  p {
+  h1, h2, h3, h4, h5, h6, p {
     color: $white;
   }
   @at-root .cruk-rfl &, .cruk-bmf & {
     background: $white;
-    h1,
-    h2,
-    h3,
-    p {
+    h1, h2, h3, h4, h5, h6, p {
       color: $global-font-color !important;
     }
   }
   @at-root .su2c & {
     background: $white;
-    h1,
-    h2,
-    h3,
-    p {
+    h1, h2, h3, h4, h5, h6, p {
       color: $black !important;
     }
   }
@@ -317,6 +306,7 @@ table.row.collapse {
     }
 
     &.last {
+      float: right;
       padding-left: 0 !important;
       padding-right: 0 !important;
       background-color: white;
@@ -562,5 +552,18 @@ table.row.collapse {
   }
   .container {
     background: transparent;
+  }
+}
+
+// Share block
+// ------------------------------------
+
+.share {
+  .float-center {
+    display: block;
+
+    img {
+      margin: auto;
+    }
   }
 }
