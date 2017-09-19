@@ -20,6 +20,7 @@ The HTML templates for CRUK emails use the ZURB Foundation for Emails framework.
 * [CRUK Bobby Moore Fund Transactional](https://litmus.com/builder/9d98586)
 * [SU2C Campaign](https://litmus.com/builder/890ec44)
 * [SU2C Transactional](https://litmus.com/builder/2e8de51)
+* [SU2C In-Series](https://litmus.com/builder/2fa644c)
 
 ### CCMP Templates
 
