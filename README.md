@@ -34,6 +34,10 @@ The HTML templates for CRUK emails use the ZURB Foundation for Emails framework.
 * [SU2C Campaign](https://litmus.com/builder/26e7f07)
 * [SU2C Transactional](https://litmus.com/builder/8c53026)
 
+### Email Builder Blocks
+
+* [RFL Sponsors Block](https://litmus.com/builder/51fb6c1)
+
 **If you want to create your own custom blocks or contribute to the repo, please follow these instructions.**
 
 ## Installing and compiling
